@@ -7,6 +7,12 @@
     </style>
 
     <style name="Theme.Splash" parent="Base.Theme.Splash">
+        <!--
+        navigationBarColor can be transparent on API27 or higher, keeping content legibility in mind.
+        Because windowLightNavigationBar is implemented from this API version.
+        -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar">true</item>
     </style>

@@ -6,6 +6,11 @@
     </style>
 
     <style name="Theme.Splash" parent="Base.Theme.Splash">
+        <!--
+        statusBarColor can be transparent on API23 or higher, keeping content legibility in mind.
+        Because windowLightStatusBar is implemented from this API version.
+        -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">true</item>
     </style>
 
