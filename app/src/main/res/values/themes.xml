@@ -20,6 +20,14 @@
         <item name="windowSplashScreenBackground">@android:color/background_light</item>
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
         <item name="postSplashScreenTheme">@style/Theme.SplashSample</item>
+
+        <!--
+        statusBarColor/navigationBarColor should not be transparent on API22 & API21 for
+        content legibility, because windowLightStatusBar/windowLightNavigationBar are not
+        implemented on these API versions.
+        -->
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
     </style>
 
     <style name="Theme.Splash" parent="Base.Theme.Splash" />
